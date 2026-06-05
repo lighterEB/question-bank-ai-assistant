@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: question-bank-ai-assistant
+  ai:
+    openai:
+      api-key: ${API_KEY}
+      base-url: ${BASE_URL:https://api.openai.com}
+      chat:
+        options:
+          model: ${AI_MODEL:gpt-4.1-mini}
+          temperature: 0.2
+
+server:
+  port: 8088
+
